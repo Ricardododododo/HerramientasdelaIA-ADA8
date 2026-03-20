@@ -3,19 +3,84 @@ import streamlit as st
 # Configuración de la página
 st.set_page_config(page_title="IA y Tipos de Apego", layout="wide")
 
-# Estilos visuales en azul
+# Estilos visuales optimizados (Paleta Azul Marino, Gris y Blanco Suave)
 st.markdown("""
     <style>
-    .main-title { color: #1E3A8A; font-size: 40px; font-weight: bold; text-align: center; margin-bottom: 5px; }
-    .subtitle { color: #3B82F6; font-size: 20px; text-align: center; font-style: italic; margin-bottom: 30px; }
-    .section-header { color: #1D4ED8; border-bottom: 2px solid #DBEAFE; padding-bottom: 5px; margin-top: 25px; margin-bottom: 15px; font-weight: bold; font-size: 22px; }
-    .content-text { font-size: 16px; line-height: 1.6; text-align: justify; color: #1F2937; margin-bottom: 20px; }
-    .ref-section { background-color: #F8FAFC; padding: 20px; border-radius: 10px; border: 1px solid #E2E8F0; margin-top: 40px; }
-    .ref-title { color: #1E3A8A; font-size: 24px; font-weight: bold; margin-bottom: 15px; }
+    /* Fondo principal y color de texto base */
+    .stApp {
+        background-color: #111827; /* Gris muy oscuro (near-black) */
+        color: #F3F4F6; /* Blanco suave */
+    }
+
+    /* Título Principal */
+    .main-title { 
+        color: #60A5FA; /* Azul cielo brillante pero suave */
+        font-size: 42px; 
+        font-weight: bold; 
+        text-align: center; 
+        margin-bottom: 5px; 
+    }
+
+    /* Frase Subtítulo */
+    .subtitle { 
+        color: #9CA3AF; /* Gris medio */
+        font-size: 20px; 
+        text-align: center; 
+        font-style: italic; 
+        margin-bottom: 40px; 
+    }
+
+    /* Cabeceras de Sección */
+    .section-header { 
+        color: #3B82F6; /* Azul brillante pero saturado */
+        border-bottom: 2px solid #1F2937; /* Gris oscuro para separación sutil */
+        padding-bottom: 10px; 
+        margin-top: 30px; 
+        margin-bottom: 20px; 
+        font-weight: bold; 
+        font-size: 24px; 
+    }
+
+    /* Texto de Contenido */
+    .content-text { 
+        font-size: 17px; 
+        line-height: 1.7; 
+        text-align: justify; 
+        color: #E5E7EB; /* Gris muy claro */
+        margin-bottom: 25px; 
+    }
+
+    /* Sección de Referencias */
+    .ref-section { 
+        background-color: #1F2937; /* Gris azulado oscuro (tarjeta) */
+        padding: 25px; 
+        border-radius: 12px; 
+        border: 1px solid #374151; /* Gris medio-oscuro */
+        margin-top: 50px; 
+    }
+
+    /* Título de Referencias */
+    .ref-title { 
+        color: #60A5FA; /* Mismo azul que el título principal */
+        font-size: 26px; 
+        font-weight: bold; 
+        margin-bottom: 20px; 
+    }
+    
+    /* Separador Horizontal personalizado */
+    hr {
+        border-color: #374151;
+    }
+
+    /* Color para las negritas dentro de las referencias */
+    strong {
+        color: #BFDBFE; /* Azul muy pálido */
+    }
+
     </style>
     """, unsafe_allow_html=True)
 
-# Título y Frase (Textual)
+# Título y Frase (Textual del documento, con los nuevos colores)
 st.markdown('<h1 class="main-title">La Inteligencia Artificial y los Tipos de Apego: ¿Herramienta práctica o refugio emocional?</h1>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Entender cómo nos vinculamos con la tecnología es también entender cómo nos vinculamos con nosotros mismos.</p>', unsafe_allow_html=True)
 
@@ -39,7 +104,7 @@ st.markdown('<div class="content-text">A pesar de los avances tecnológicos, la 
 st.markdown('<div class="section-header">La relación mutua: importancia</div>', unsafe_allow_html=True)
 st.markdown('<div class="content-text">La relación entre los tipos de apego y el uso de la Inteligencia Artificial revela que la tecnología no es neutral: interactúa con nuestras emociones, necesidades y formas de vincularnos. La evidencia sugiere que, aunque la IA tiene el potencial de convertirse en un recurso emocional, su uso sigue siendo predominantemente práctico (Bao, 2025). Sin embargo, ciertos perfiles, especialmente aquellos con inseguridad en el apego, pueden desarrollar vínculos más profundos con estas tecnologías. En este sentido, la IA no reemplaza las relaciones humanas, pero sí redefine la manera en que las experimentamos. Nos enfrenta a un escenario donde la línea entre herramienta y vínculo comienza a desdibujarse, obligándonos a cuestionar qué significa realmente conectar en la era digital.</div>', unsafe_allow_html=True)
 
-# --- APARTADO DE REFERENCIAS ---
+# --- APARTADO DE REFERENCIAS (Con fondo y texto optimizado) ---
 
 st.markdown('<div class="ref-section">', unsafe_allow_html=True)
 st.markdown('<p class="ref-title">REFERENCIAS Y RESÚMENES</p>', unsafe_allow_html=True)
