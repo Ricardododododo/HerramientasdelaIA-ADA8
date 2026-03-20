@@ -3,97 +3,30 @@ import streamlit as st
 # Configuración de la página
 st.set_page_config(page_title="IA y Tipos de Apego", layout="wide")
 
-# Estilos personalizados para la paleta de azules y tipografía
+# Estilos visuales en azul
 st.markdown("""
     <style>
-    .main-title {
-        color: #1E3A8A;
-        font-size: 45px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .subtitle {
-        color: #3B82F6;
-        font-size: 22px;
-        text-align: center;
-        font-style: italic;
-        margin-bottom: 30px;
-    }
-    .section-header {
-        color: #1D4ED8;
-        border-bottom: 2px solid #DBEAFE;
-        padding-bottom: 5px;
-        margin-top: 20px;
-    }
-    .content-text {
-        font-size: 17px;
-        line-height: 1.6;
-        text-align: justify;
-    }
-    .highlight-box {
-        background-color: #EFF6FF;
-        padding: 20px;
-        border-radius: 10px;
-        border-left: 5px solid #3B82F6;
-    }
+    .main-title { color: #1E3A8A; font-size: 40px; font-weight: bold; text-align: center; margin-bottom: 5px; }
+    .subtitle { color: #3B82F6; font-size: 20px; text-align: center; font-style: italic; margin-bottom: 30px; }
+    .section-header { color: #1D4ED8; border-bottom: 2px solid #DBEAFE; padding-bottom: 5px; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+    .content-text { font-size: 16px; line-height: 1.6; text-align: justify; color: #1F2937; }
+    .ref-section { background-color: #F8FAFC; padding: 20px; border-radius: 10px; border: 1px solid #E2E8F0; margin-top: 40px; }
+    .ref-title { color: #1E3A8A; font-size: 24px; font-weight: bold; margin-bottom: 15px; }
     </style>
     """, unsafe_allow_html=True)
 
-# Título Principal y Frase Motivadora
+# Título y Frase (Textual del documento)
 st.markdown('<h1 class="main-title">La Inteligencia Artificial y los Tipos de Apego: ¿Herramienta práctica o refugio emocional?</h1>', unsafe_allow_html=True)
-st.markdown('<p class="subtitle">"Entender cómo nos vinculamos con la tecnología es también entender cómo nos vinculamos con nosotros mismos."</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitle">Entender cómo nos vinculamos con la tecnología es también entender cómo nos vinculamos con nosotros mismos.</p>', unsafe_allow_html=True)
 
-# Introducción
-st.markdown('<h2 class="section-header">Introducción</h2>', unsafe_allow_html=True)
-st.markdown("""
-<div class="content-text">
-En la actualidad, la Inteligencia Artificial (IA) ha transformado profundamente la manera en que las personas interactúan con la tecnología. 
-Lo que antes era una herramienta puramente funcional, hoy comienza a ocupar un lugar en la vida emocional de los usuarios, simulando compañía y apoyo psicológico. 
-Este fenómeno permite comprender cómo establecemos vínculos no solo con otros individuos, sino también con entidades tecnológicas.
-</div>
-""", unsafe_allow_html=True)
+# Cuerpo del Artículo (Contenido Textual)
+st.markdown('<div class="content-text">', unsafe_allow_html=True)
 
-st.write("---")
+st.markdown('<h2 class="section-header">Artículo de divulgación científica</h2>', unsafe_allow_html=True)
+st.write("En la actualidad, la Inteligencia Artificial (IA) ha transformado profundamente la manera en que las personas interactúan con la tecnología. Lo que antes era una herramienta puramente funcional, hoy comienza a ocupar un lugar en la vida emocional de los usuarios. Desde asistentes virtuales hasta chatbots conversacionales, la IA no solo responde preguntas, sino que también simula compañía y apoyo psicológico (Xie & Pentina, 2022). Este fenómeno ha despertado el interés de la psicología, particularmente desde la teoría del apego, la cual permite comprender cómo las personas establecen vínculos no solo con otros individuos, sino también con entidades tecnológicas (Yang & Oshio, 2025).")
 
-# Cuerpo del Dashboard en Columnas
-col1, col2 = st.columns(2)
+st.markdown('<h2 class="section-header">La teoría del apego: base para entender la relación humano-IA</h2>', unsafe_allow_html=True)
+st.write("La teoría del apego explica que los seres humanos desarrollan patrones de relación desde la infancia que influyen en su comportamiento emocional en la vida adulta (Levy et al., 2011). Estos estilos, como el apego seguro, ansioso y evitativo, determinan cómo las personas buscan cercanía, manejan la intimidad y regulan sus emociones (Ortiz et al., 2019). En el contexto actual, estos patrones no solo se reflejan en relaciones humanas, sino también en la interacción con sistemas de IA. De hecho, estudios recientes sugieren que los usuarios pueden desarrollar formas de apego hacia agentes artificiales, especialmente cuando estos presentan características humanas o responden de manera empática (Hermann, 2022).")
 
-with col1:
-    st.markdown('<h3 class="section-header">Teoría del Apego y la IA</h3>', unsafe_allow_html=True)
-    st.markdown("""
-    <div class="content-text">
-    Los patrones de relación desarrollados desde la infancia (seguro, ansioso y evitativo) influyen en cómo manejamos la intimidad con sistemas de IA. 
-    Estudios sugieren que los usuarios pueden desarrollar apego hacia agentes artificiales cuando estos presentan características humanas o responden de manera empática.
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.info("**Antropomorfización:** Es la tendencia a atribuir características humanas a las máquinas, lo que facilita la creación de vínculos afectivos unilaterales.")
-
-with col2:
-    st.markdown('<h3 class="section-header">Uso según Estilos de Apego</h3>', unsafe_allow_html=True)
-    st.markdown('<div class="highlight-box">', unsafe_allow_html=True)
-    st.markdown("""
-    - **Apego Ansioso:** Suelen recurrir a la IA para validación o compañía.
-    - **Apego Evitativo:** Prefieren la IA porque permite interactuar sin el riesgo de una conexión emocional profunda.
-    - **Uso Predominante:** A pesar de las necesidades emocionales, la mayoría utiliza la IA para tareas académicas o laborales.
-    """, unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
-
-# Sección de Conclusión
-st.markdown('<h2 class="section-header">¿Relaciones Auténticas o Simuladas?</h2>', unsafe_allow_html=True)
-st.warning("La IA carece de una experiencia emocional real, lo que limita la autenticidad de la relación comparada con el vínculo humano basado en reciprocidad y procesos neuronales profundos.")
-
-st.markdown("""
-<div class="content-text">
-La IA no reemplaza las relaciones humanas, pero sí redefine la manera en que las experimentamos, desdibujando la línea entre herramienta y vínculo.
-</div>
-""", unsafe_allow_html=True)
-
-# Sidebar con Referencias Seleccionadas
-st.sidebar.title("Referencias Clave")
-st.sidebar.markdown("""
-- **Bao, Z. (2025):** Apego y preferencias por la IA.
-- **Hermann, E. (2022):** IA antropomorfizada y consumo.
-- **Yang & Oshio (2025):** Marco teórico de la relación humano-IA.
-""")
+st.markdown('<h2 class="section-header">Apego y uso de la IA: entre funcionalidad y necesidad emocional</h2>', unsafe_allow_html=True)
+st.write("Las investigaciones muestran que los estilos de apego influyen directamente en la forma en que las personas utilizan la IA. En general, el uso de estas tecnologías puede dividirse en dos grandes categorías: como herramienta práctica o como apoyo emocional. Por un lado, la mayoría de los usuarios tiende a utilizar la IA para actividades funcionales, como resolver tareas académicas, laborales o informativas (Bao, 2025) 
